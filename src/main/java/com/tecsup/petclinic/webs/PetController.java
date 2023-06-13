@@ -60,7 +60,6 @@ public class PetController {
 
 	}
 
-
 	/**
 	 * Create pet
 	 *
@@ -77,7 +76,6 @@ public class PetController {
 		return  ResponseEntity.status(HttpStatus.CREATED).body(newPetTO);
 
 	}
-
 
 	/**
 	 * Find pet by id
@@ -132,7 +130,6 @@ public class PetController {
 
 		return ResponseEntity.ok(updatePetTO);
 	}
-
 	/**
 	 * Delete pet by id
 	 *
@@ -148,5 +145,4 @@ public class PetController {
 			return ResponseEntity.notFound().build();
 		}
 	}
-
 }
