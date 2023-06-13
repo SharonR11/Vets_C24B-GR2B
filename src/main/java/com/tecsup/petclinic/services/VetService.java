@@ -47,7 +47,7 @@ public interface VetService {
 	 * @param typeId
 	 * @return
 	 */
-	List<Vet> findByLastName(int lastName);
+	List<Vet> findByLastName(String lastName);
 
 	/**
 	 * 
