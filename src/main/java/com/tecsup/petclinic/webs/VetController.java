@@ -1,6 +1,5 @@
 package com.tecsup.petclinic.webs;
 
-
 import com.tecsup.petclinic.mapper.VetMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -10,6 +9,16 @@ import com.tecsup.petclinic.domain.VetTO;
 import com.tecsup.petclinic.entities.Vet;
 import com.tecsup.petclinic.exception.VetNotFoundException;
 import com.tecsup.petclinic.services.VetService;
+
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -64,6 +73,7 @@ public class VetController {
         VetTO updatedVetTO;
         try {
             Vet updatedVet = vetService.findById(id);
+            
             updatedVet.setFirstName(vetTO.getFirstName());
             updatedVet.setLastName(vetTO.getLastName());
             vetService.update(updatedVet);
