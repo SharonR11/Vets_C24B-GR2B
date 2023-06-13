@@ -75,8 +75,11 @@ public class VetController {
             Vet updatedVet = vetService.findById(id);
             
             updatedVet.setFirstName(vetTO.getFirstName());
+            
             updatedVet.setLastName(vetTO.getLastName());
+            
             vetService.update(updatedVet);
+            
             updatedVetTO = mapper.toVetTO(updatedVet);
         } catch (VetNotFoundException e) {
             return ResponseEntity.notFound().build();
