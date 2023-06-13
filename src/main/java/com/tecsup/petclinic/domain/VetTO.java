@@ -6,12 +6,10 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data 
+@Data
 public class VetTO {
-	private Integer id;
-	private String name;
-	private int typeid;
-	private int ownerId;
-	private String birthDate;
-
+    private Integer id;
+    private String firstName;
+    private String lastName;
 }
+
