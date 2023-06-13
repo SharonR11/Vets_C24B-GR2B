@@ -7,7 +7,7 @@ import com.tecsup.petclinic.exception.PetNotFoundException;
 
 /**
  * 
- * @author jgomezm
+ * @author sharonr11
  *
  */
 public interface PetService {
