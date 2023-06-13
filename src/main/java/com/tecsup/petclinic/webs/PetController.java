@@ -20,11 +20,6 @@ import com.tecsup.petclinic.services.PetService;
 
 import java.util.List;
 
-/**
- * 
- * @author jgomezm
- *
- */
 @RestController
 @Slf4j
 public class PetController {
@@ -105,7 +100,6 @@ public class PetController {
 
 		return ResponseEntity.ok(updatePetTO);
 	}
-
 	@DeleteMapping(value = "/pets/{id}")
 	ResponseEntity<String> delete(@PathVariable Integer id) {
 
@@ -116,5 +110,4 @@ public class PetController {
 			return ResponseEntity.notFound().build();
 		}
 	}
-
 }
