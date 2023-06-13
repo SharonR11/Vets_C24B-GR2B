@@ -9,9 +9,16 @@ import lombok.NoArgsConstructor;
 @Data 
 public class VetTO {
 	private Integer id;
-	private String name;
-	private int typeid;
-	private int ownerId;
-	private String birthDate;
-
+	private String firstName;
+	private String lastName;
+	
+	
+	public VetTO(String firstName, String lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
+	
+	
 }
