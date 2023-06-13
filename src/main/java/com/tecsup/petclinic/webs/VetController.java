@@ -36,11 +36,16 @@ public class VetController {
 
     @PostMapping(value = "/vets")
     @ResponseStatus(HttpStatus.CREATED)
+    
     public ResponseEntity<VetTO> createVet(@RequestBody VetTO vetTO) {
+    	
         Vet newVet = mapper.toVet(vetTO);
+        
         VetTO newVetTO = mapper.toVetTO(vetService.create(newVet));
+        
         return ResponseEntity.status(HttpStatus.CREATED).body(newVetTO);
     }
+    
 
     @GetMapping(value = "/vets/{id}")
     public ResponseEntity<VetTO> findVetById(@PathVariable Integer id) {
