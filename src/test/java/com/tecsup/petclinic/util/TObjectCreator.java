@@ -1,7 +1,9 @@
 package com.tecsup.petclinic.util;
 
 import com.tecsup.petclinic.domain.PetTO;
+import com.tecsup.petclinic.domain.VetTO;
 import com.tecsup.petclinic.entities.Pet;
+import com.tecsup.petclinic.entities.Vet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,4 +85,72 @@ public class TObjectCreator {
 	public static PetTO newPetTOForDelete() {
 		return new PetTO(10000,"Beethoven3",1,1, "2020-05-20");
 	}
+
+	public static Vet getvet() {
+		return new Vet(1,"Leo","sandro");
+	}
+
+	public static Vet newVet() {
+		return new Vet(0,"Pedro","julian");
+	}
+
+	public static Vet newVetCreated() {
+		Vet vet = newVet();
+		vet.setId(1000);
+		return vet;
+	}
+
+	public static Vet newVetForUpdate() {
+		return new Vet(0,"jorge","ester");
+	}
+	public static Vet newVetCreatedForUpdate() {
+		Vet vet = newVetForUpdate();
+		vet.setId(4000);
+		return vet;
+	}
+
+	public static Vet newVetForDelete() {
+		return new Vet(0,"Bird","Ret");
+	}
+
+	public static Vet newVetCreatedForDelete() {
+		Vet vet = newVetForDelete();
+		vet.setId(2000);
+		return vet;
+	}
+	public static List<VetTO> getAllVetTOs() {
+		List<VetTO> vetTOs  = new ArrayList<VetTO>();
+		vetTOs.add(new VetTO(1,"Leo","yuli"));
+		vetTOs.add(new VetTO(2,"Basil","uri"));
+		vetTOs.add(new VetTO(3,"Rosy","leo"));
+		vetTOs.add(new VetTO(4,"Jewel","ajajj"));
+		vetTOs.add(new VetTO(5,"Iggy","Juan"));
+		return vetTOs;
+	}
+
+
+	public static List<Vet> getVetsForFindByFirstName() {
+		List<Vet> vets  = new ArrayList<Vet>();
+		vets.add(new Vet(1,"Leo","uril"));
+		return vets;
+	}
+
+	public static List<Vet> getVetsForFindByTypeId() {
+		List<Vet> vets  = new ArrayList<Vet>();
+		vets.add(new Vet(9,"Lucky","luca"));
+		vets.add(new Vet(11,"Freddy","FRET"));
+		return vets;
+	}
+	public static VetTO getVetTO() {
+		return new VetTO(1,"Leo","gerad");
+	}
+
+	public static VetTO newVetTO() {
+		return new VetTO(-1,"Beethoven","JJSJS");
+	}
+
+	public static VetTO newVetTOForDelete() {
+		return new VetTO(10000,"Beethoven3","sk");
+	}
+
 }

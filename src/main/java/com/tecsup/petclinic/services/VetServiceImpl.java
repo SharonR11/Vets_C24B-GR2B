@@ -11,15 +11,11 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @Slf4j
 public class VetServiceImpl implements VetService {
-
-
 	VetRepository vetRepository;
 
 	public VetServiceImpl (VetRepository vetRepository) {
 		this. vetRepository = vetRepository;
 	}
-
-
 	/**
 	 * 
 	 * @param vet
@@ -51,7 +47,6 @@ public class VetServiceImpl implements VetService {
 
 		Vet vet = findById(id);
 		vetRepository.delete(vet);
-
 	}
 
 	/**

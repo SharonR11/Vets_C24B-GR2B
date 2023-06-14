@@ -7,13 +7,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-/**
- * 
- * @author jgomezm
- *
- */
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data

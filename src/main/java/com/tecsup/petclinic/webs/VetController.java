@@ -1,6 +1,4 @@
 package com.tecsup.petclinic.webs;
-
-
 import com.tecsup.petclinic.mapper.VetMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -12,14 +10,11 @@ import com.tecsup.petclinic.exception.VetNotFoundException;
 import com.tecsup.petclinic.services.VetService;
 
 import java.util.List;
-
 @RestController
 @Slf4j
 public class VetController {
-
     private final VetService vetService;
     private final VetMapper mapper;
-
     public VetController(VetService vetService, VetMapper mapper) {
         this.vetService = vetService;
         this.mapper = mapper;

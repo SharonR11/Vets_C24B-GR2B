@@ -14,17 +14,17 @@ public interface VetMapper {
 
     VetMapper INSTANCE = Mappers.getMapper(VetMapper.class);
 
-    @Mapping(source = "first_name", target = "firstName")
-    @Mapping(source = "last_name", target = "lastName")
+    @Mapping(source = "id", target = "id")
+    @Mapping(source = "firstName", target = "firstName")
+    @Mapping(source = "lastName", target = "lastName")
     Vet toVet(VetTO vetTO);
 
-    @Mapping(source = "firstName", target = "first_name")
-    @Mapping(source = "lastName", target = "last_name")
+    List<Vet> toVetList(List<VetTO> vetTOList);
+
+    @Mapping(source = "id", target = "id")
+    @Mapping(source = "firstName", target = "firstName")
+    @Mapping(source = "lastName", target = "lastName")
     VetTO toVetTO(Vet vet);
 
     List<VetTO> toVetTOList(List<Vet> vetList);
-
-    List<Vet> toVetList(List<VetTO> vetTOList);
 }
-
-

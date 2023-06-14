@@ -33,9 +33,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * 
- */
 @AutoConfigureMockMvc
 @SpringBootTest
 @Slf4j
@@ -86,11 +83,6 @@ public class PetControllerMockitoTest {
 	}
 	
 
-	/**
-	 * 
-	 * @throws Exception
-	 * 
-	 */
 	@Test
 	public void testFindPetOK() throws Exception {
 
@@ -113,10 +105,6 @@ public class PetControllerMockitoTest {
 	}
 
 
-	/**
-	 * 
-	 * @throws Exception
-	 */
 	@Test
 	public void testFindPetKO() throws Exception {
 
