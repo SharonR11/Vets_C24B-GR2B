@@ -7,52 +7,16 @@ import com.tecsup.petclinic.exception.VetNotFoundException;
 
 public interface VetService {
 
-	/**
-	 * 
-	 * @param vet
-	 * @return
-	 */
 	Vet create(Vet vet);
 
-	/**
-	 * 
-	 * @param vet
-	 * @return
-	 */
 	Vet update(Vet vet);
-
-	/**
-	 * 
-	 * @param id
-	 * @throws PetNotFoundException
-	 */
 	void delete(Integer id) throws VetNotFoundException;
 
-	/**
-	 * 
-	 * @param id
-	 * @return
-	 */
 	Vet findById(Integer id) throws VetNotFoundException;
 
-	/**
-	 * 
-	 * @param name
-	 * @return
-	 */
 	List<Vet> findByFirstName(String firstName);
 
-	/**
-	 * 
-	 * @param typeId
-	 * @return
-	 */
 	List<Vet> findByLastName(String lastName);
 
-	/**
-	 * 
-	 * @param ownerId
-	 * @return
-	 */
 	List<Vet> findAll();
 }

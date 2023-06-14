@@ -20,11 +20,6 @@ import com.tecsup.petclinic.services.PetService;
 
 import java.util.List;
 
-/**
- * 
- * @author jgomezm
- *
- */
 @RestController
 @Slf4j
 public class PetController {
@@ -40,11 +35,6 @@ public class PetController {
 		this.mapper = mapper ;
 	}
 
-	/**
-	 * Get all pets
-	 *
-	 * @return
-	 */
 	@GetMapping(value = "/pets")
 	public ResponseEntity<List<PetTO>> findAllPets() {
 
@@ -60,12 +50,6 @@ public class PetController {
 
 	}
 
-	/**
-	 * Create pet
-	 *
-	 * @param petTO
-	 * @return
-	 */
 	@PostMapping(value = "/pets")
 	@ResponseStatus(HttpStatus.CREATED)
 	ResponseEntity<PetTO> create(@RequestBody PetTO petTO) {
@@ -77,13 +61,6 @@ public class PetController {
 
 	}
 
-	/**
-	 * Find pet by id
-	 *
-	 * @param id
-	 * @return
-	 * @throws PetNotFoundException
-	 */
 	@GetMapping(value = "/pets/{id}")
 	ResponseEntity<PetTO> findById(@PathVariable Integer id) {
 
@@ -100,13 +77,6 @@ public class PetController {
 
 	}
 
-	/**
-	 * Update and create pet
-	 *
-	 * @param petTO
-	 * @param id
-	 * @return
-	 */
 	@PutMapping(value = "/pets/{id}")
 	ResponseEntity<PetTO>  update(@RequestBody PetTO petTO, @PathVariable Integer id) {
 
@@ -130,11 +100,6 @@ public class PetController {
 
 		return ResponseEntity.ok(updatePetTO);
 	}
-	/**
-	 * Delete pet by id
-	 *
-	 * @param id
-	 */
 	@DeleteMapping(value = "/pets/{id}")
 	ResponseEntity<String> delete(@PathVariable Integer id) {
 

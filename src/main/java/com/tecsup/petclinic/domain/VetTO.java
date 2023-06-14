@@ -6,8 +6,9 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data 
+@Data
 public class VetTO {
+
 	private Integer id;
 	private String firstName;
 	private String lastName;
@@ -20,5 +21,10 @@ public class VetTO {
 	}
 	
 	
-	
+
+    private Integer id;
+    private String firstName;
+    private String lastName;
+
 }
+
