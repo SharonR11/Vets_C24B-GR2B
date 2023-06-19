@@ -24,33 +24,16 @@ public class PetServiceImpl implements PetService {
 		this. petRepository = petRepository;
 	}
 
-
-	/**
-	 * 
-	 * @param pet
-	 * @return
-	 */
 	@Override
 	public Pet create(Pet pet) {
 		return petRepository.save(pet);
 	}
 
-	/**
-	 * 
-	 * @param pet
-	 * @return
-	 */
 	@Override
 	public Pet update(Pet pet) {
 		return petRepository.save(pet);
 	}
 
-
-	/**
-	 * 
-	 * @param id
-	 * @throws PetNotFoundException
-	 */
 	@Override
 	public void delete(Integer id) throws PetNotFoundException{
 
@@ -59,11 +42,6 @@ public class PetServiceImpl implements PetService {
 
 	}
 
-	/**
-	 * 
-	 * @param id
-	 * @return
-	 */
 	@Override
 	public Pet findById(Integer id) throws PetNotFoundException {
 
@@ -75,11 +53,6 @@ public class PetServiceImpl implements PetService {
 		return pet.get();
 	}
 
-	/**
-	 * 
-	 * @param name
-	 * @return
-	 */
 	@Override
 	public List<Pet> findByName(String name) {
 
@@ -90,11 +63,6 @@ public class PetServiceImpl implements PetService {
 		return pets;
 	}
 
-	/**
-	 * 
-	 * @param typeId
-	 * @return
-	 */
 	@Override
 	public List<Pet> findByTypeId(int typeId) {
 
@@ -105,11 +73,6 @@ public class PetServiceImpl implements PetService {
 		return pets;
 	}
 
-	/**
-	 * 
-	 * @param ownerId
-	 * @return
-	 */
 	@Override
 	public List<Pet> findByOwnerId(int ownerId) {
 
@@ -120,10 +83,6 @@ public class PetServiceImpl implements PetService {
 		return pets;
 	}
 
-	/**
-	 *
-	 * @return
-	 */
 	@Override
 	public List<Pet> findAll() {
 		//

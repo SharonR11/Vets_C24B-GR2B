@@ -1,8 +1,4 @@
 package com.tecsup.petclinic.webs;
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'main' of https://github.com/SharonR11/Vets_C24B-GR2B
 import com.tecsup.petclinic.mapper.VetMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

@@ -10,13 +10,17 @@ import java.util.List;
 
 public class TObjectCreator {
 
+	//obtener pet
 	public static Pet getPet() {
 		return new Pet(1,"Leo",1,1, null);
-	}
-
+	}	
+	
+	//nuevo
 	public static Pet newPet() {
 		return new Pet(0,"Punky",1,1, null);
 	}
+	
+	//creat nuevo
 
 	public static Pet newPetCreated() {
 		Pet pet = newPet();
@@ -86,7 +90,9 @@ public class TObjectCreator {
 		return new PetTO(10000,"Beethoven3",1,1, "2020-05-20");
 	}
 
-	public static Vet getvet() {
+	
+	//VET
+	public static Vet getVet() {
 		return new Vet(1,"Leo","sandro");
 	}
 

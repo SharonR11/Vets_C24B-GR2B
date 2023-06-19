@@ -1,6 +1,4 @@
-
-<<<<<<< HEAD
-=======
+package com.tecsup.petclinic.services;
 import lombok.extern.slf4j.Slf4j;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -24,7 +22,7 @@ public class VetServiceTest {
 	 @Test
 	 public void testFindVetByFirstName() {
 
-	        String FIND_FIRSTNAME = "Leo";
+	        String FIND_FIRSTNAME = "Henry";
 	        int SIZE_EXPECTED = 1;
 
 	        List<Vet> vets = this.vetService.findByFirstName(FIND_FIRSTNAME);
@@ -49,7 +47,5 @@ public class VetServiceTest {
 	        assertEquals(VET_LASTNAME, vetCreated.getLastName());
 
 	    }
-	 
-	 
+	 	 
 }
->>>>>>> branch 'main' of https://github.com/SharonR11/Vets_C24B-GR2B

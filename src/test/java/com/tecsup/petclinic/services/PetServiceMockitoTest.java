@@ -33,9 +33,6 @@ public class PetServiceMockitoTest {
         this.petService = new PetServiceImpl(this.repository);
     }
 
-    /**
-     *
-     */
     @Test
     public void testFindPetById() {
 

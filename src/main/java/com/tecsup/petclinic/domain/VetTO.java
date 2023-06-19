@@ -20,11 +20,5 @@ public class VetTO {
 		this.lastName = lastName;
 	}
 	
-	
-
-    private Integer id;
-    private String firstName;
-    private String lastName;
-
 }
 
