@@ -51,9 +51,6 @@ public class PetServiceMockitoTest {
 
     }
 
-    /**
-     *
-     */
     @Test
     public void testFindPetByName() {
 
@@ -69,9 +66,6 @@ public class PetServiceMockitoTest {
         assertEquals(petsExpected.size(), pets.size());
     }
 
-    /**
-     *
-     */
     @Test
     public void testFindPetByTypeId() {
 
@@ -87,9 +81,7 @@ public class PetServiceMockitoTest {
         assertEquals(petsExpected.size(), pets.size());
     }
 
-    /**
-     *
-     */
+    
     @Test
     public void testFindPetByOwnerId() {
 
@@ -106,13 +98,6 @@ public class PetServiceMockitoTest {
 
     }
 
-    /**
-     * To get ID generate , you need
-     * setup in id primary key in your
-     * entity this annotation :
-     *
-     * @GeneratedValue(strategy = GenerationType.IDENTITY)
-     */
     @Test
     public void testCreatePet() {
 
@@ -137,10 +122,6 @@ public class PetServiceMockitoTest {
 
     }
 
-
-    /**
-     *
-     */
     @Test
     public void testUpdatePet() {
 
@@ -180,9 +161,6 @@ public class PetServiceMockitoTest {
         assertEquals(UP_TYPE_ID, upgradePet.getOwnerId());
     }
 
-    /**
-     *
-     */
     @Test
     public void testDeletePet() {
 

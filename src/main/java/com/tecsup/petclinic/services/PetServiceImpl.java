@@ -8,11 +8,6 @@ import com.tecsup.petclinic.entities.Pet;
 import com.tecsup.petclinic.exception.PetNotFoundException;
 import com.tecsup.petclinic.repositories.PetRepository;
 
-/**
- * 
- * @author jgomezm
- *
- */
 @Service
 @Slf4j
 public class PetServiceImpl implements PetService {
